@@ -80,7 +80,7 @@ class LinkedList {
   pop() {
     if (!this.head) return;
   
-    if (this.size() === 1) {
+    if (!this.head.next) {
       this.head = null;
     } else {
       let current = this.head;
